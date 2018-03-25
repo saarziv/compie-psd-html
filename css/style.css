@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin:0;
@@ -5,7 +6,7 @@
 }
 
 html {
-/*    font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     font-size: 20px;
@@ -15,8 +16,11 @@ html {
 body {
     color: #33455d;
     font-family: "Fb Spoiler";
+    background-color: #fafcfd;  
 }
-
+a {
+    text-decoration: none;
+}
 /*
 ----------
 REUSABLE OBJECTS
@@ -27,14 +31,47 @@ REUSABLE OBJECTS
     max-width: 1140px;
     margin :0 auto;
 }
-nav {
+#insurance-information {
+    text-align: right;
+    margin-top: 50px;
+    color: #457184;
+    background-color: #fafcfd;
+}
+
+#insurance-information .container {
     display: flex;
+}
+nav {
     padding: 14px;
 }
 
 h1 {
     font-size: 275%;
 }
+
+
+/*
+----------
+Buttons  
+*/
+
+.btn-suggestion {
+    height: 48px;
+    width: 267px;
+}
+.btn {
+    text-decoration: none;
+    display: flex;
+    background-color: #00c7d9;
+    border-radius: 200px;
+    color: #fff;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+
 
 /*
 ----------
@@ -43,21 +80,20 @@ HEADER SECTION
 */
 header {
     background-color: #49d3e8;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
 }
-.left-nav {
-    margin-right: auto;
-    flex-basis: 10%;
-}
-
-.right-nav {
-    margin-left: auto;
-}
-
 .apartment-insurance {
     display: inline-block;
     font-weight: 700;
     line-height: 18px;
+}
+.apartment-insurance::before {
+    content: " ";
+    display: inline-block;
+    height: 12px;
+    border: 1px solid #33455d;
+    margin: 0 14px;
+ 
 }
 
 
@@ -92,18 +128,591 @@ header {
 
 .couch-logo {
     vertical-align: middle;
+    margin-right: 10px;
 /*    background-color: #fff;*/
 }
 
 .seperator {
-    margin-left: 14px;
+    margin-left: 40px;
 }
 
-.person-logo {
-    margin-right: 10px;
-}
+
 
 .mail-logo {
+    margin-right: auto;
+}
+.mail-logo::before {
+    content: " ";
+    display: inline-block;
+    border: 1px solid #33455d;
+    height: 13px;
+    margin: 0 13px;
+}
+
+
+.text {
+/*    display:inline-block;*/
+    background-color: red;
+    justify-content: center;
+}
+
+.nav-main {
+    display: flex;
+}
+/*
+----------
+HOW IT WORKS SECTION
+----------
+*/
+.how-it-works-list {
+    display: flex;
+}
+
+.step {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding: 10px;
+/*    margin: 20px 0;*/
+}
+
+#how-it-works {
+    background-color: #49d3e8;
+    height: 30px;
+    display: flex;
+        
+}
+#how-it-works .container {
+    background-color: #fafcfd;
+/*    padding: 10px;*/
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.step-number {
+    font-size: 250%;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+.step-icon {
+    margin-right: 10px;
+    height: 75%;
+}
+
+.left-arrow-icon {
+    margin:0 47px;
+    height: 50%;
+    align-self: center;
+}
+
+.step-content {
+    text-align: right;
+    font-size: 90%;
+    
+}
+/*
+----------
+INSURANCE SECTION
+----------
+*/
+.insurance-content {
+    flex: 7;
+        
+}
+
+.price-wizard-content {
+    flex: 3;
+    margin-left: 10px; 
+    
+}
+
+.sort {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content-box {
+    border: 1px solid #d9e4ea;
+    box-shadow: 0 2px 0 rgba(184, 204, 213, 0.19);
+    border: 1px solid #d9e4ea;
+    border-radius: 5px;
+    
+}
+
+.main-heading {
+    border-bottom: 1px solid #d9e4ea;
+    background-color: #f8fafa;
+    padding: 10px;
+    font-size: 115%;
+    font-weight: 700;
+    text-align: right;
+}
+
+.content-box-info {
+    padding: 10px;
+    font-size: 80%;
+}
+.content-box-info  label:{
+    font-weight: 700;
+}
+
+#l-price {
+    font-weight: 700;
+}
+
+.styled-select {
+    width: 110px;
+/*    padding: 5px;*/
+    font-size: 90%;
+    line-height: 1;
+    border: 0;
+/*    border-radius: 5px;*/
+    background: url(img/down-arrow-logo.png) no-repeat left;
+    -webkit-appearance: none;
+    direction: rtl;
+    cursor: pointer;
+}
+
+.of-select::before {
+    content: " ";
+    border: 1px solid #becdd6;
+    margin: 0 10px;
+    font-size: 80%;
+    
+}
+.border-before::before {
+    content: " ";
+    border: 1px solid #becdd6;
+    margin: 0 10px;
+    font-size: 80%;
+    
+}
+.border-after::after {
+    content: " ";
+    border: 1px solid #becdd6;
+    margin: 0 10px;
+    font-size: 80%;
+    display: inline-block;
+    height: 19px;
+    vertical-align: middle;
+}
+
+.break-left {
+    margin-left: auto;
+}
+
+
+#price-sort {
+    color: red;
+}
+
+#location-sort {
+    width: 80px;
+    color: #457184;
+}
+
+#insurance-select {
+    font-weight: 700;
+    font-size: 100%;
+    width: 115px;
+    color: #33455d;
+}
+
+.border-bottom::after {
+    content: " ";
+    border-bottom: 1px solid #dae4ea;
+    display: inline-block;
+    width: 94%;
+    margin-top: 10px;
+}
+/*
+----------
+WIZARD SECTION
+----------
+*/
+.wiz-select {
+    margin-top: 10px;
+    width: 300px;
+    border: 1px solid #d9e4ea;
+    padding: 10px;
+    font-size: 85%;
+    color: #457184;
+    background-color: #ffffff;
+    background: url(img/down-arrow-logo.png) no-repeat 5% 50%;
+}
+
+#first-wiz-select {
+    margin-top: 20px;
+}
+
+#last-wiz-select::after {
+    
+}
+
+.wiz-question {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.question-content {
+    flex: 5;
     margin-left: 10px;
 }
 
+.wiz-answer {
+    border: 1px solid #d9e4ea;
+    padding: 10px;
+    height: 38px;
+    width: 38px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+.wiz-answer a {
+    text-decoration: none;
+    color: #457184;
+}
+
+
+
+.date-select {
+    background: url(img/date-logo.png) no-repeat 4% 50%;
+}
+
+.plus-select {
+    background: url(img/plus-logo.png) no-repeat 4% 50%;
+}
+
+.commercial {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-commercial {
+    width: 95%;
+    margin: 8px;
+}
+/*
+----------
+INSURANCE-COMPANIES DIV
+----------
+*/
+.insurance-companies {
+    margin-top: 12px;
+}
+
+.insurance-company {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.company-logo {
+    margin: 15px;
+}
+
+.company-info {
+    padding: 24px 0px;
+    color: #83a0ad;
+}
+.company-info p,span {
+    font-size: 80%;
+    margin:8px 0px;
+}
+.company-info h2 {
+    font-size: 120%;
+    color: #5c6a7d;
+}
+
+.company-plan-price {
+    margin: auto;
+    padding: 10px;
+}
+.company-plan-price p {
+    font-size: 75%;
+    color: #4f788a;
+}
+.company-plan-price h3 {
+    font-size: 170%;
+}
+
+.rating span {
+    font-size: 100%;
+}
+
+.location-and-rating {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.location-and-rating a {
+    text-decoration: none;
+    color: #83a0ad;
+}
+
+
+
+
+
+.seperator-price {
+    margin:  20px 10px 0px 0px;
+    height: 70%;
+    width: 1px;
+}
+
+.star:checked,
+.star:active {
+    color: #fbb676;
+}
+.star {
+    border: 0;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    opacity: 0;
+    
+}
+
+.checked {
+    color: #fbb676;
+}
+
+.rating {
+    display: flex;
+}
+
+.btn-purchase {
+    padding: 8px 22px;
+    font-size: 90%;
+}
+
+.shopping-cart-logo {
+    margin-left: 5px;
+}
+
+/*
+----------
+PAGE-NAV DIV
+----------
+*/
+
+.page-nav {
+    margin-top: 40px;
+    width: 50%;
+    margin-bottom: 10px
+    
+}
+.page-nav ul {
+    display: flex;
+}
+
+.page-nav-box {
+    border-radius: 2px;
+    border: 1px solid #d9e4ea;
+    background-color: #fcfcfc;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 110%;
+    line-height: 90%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.page-nav-box a {
+    color: #33455d;
+}
+
+
+.priv-arrow {
+    background: url(
+    img/priv-arrow.png) no-repeat 50% 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+.next-arrow {
+    background: url(
+    img/next-arrow.png) no-repeat 50% 50% ;
+    cursor: pointer;
+}
+
+/*
+----------
+FOOTER SECTION 
+----------
+*/
+
+footer {
+    margin-top: 355px;
+    background-color: #36455e;
+    padding-bottom: 70px;
+}
+
+.btn-compie {
+/*    background-color: #f5f7f9;*/
+    color: #36455e;
+    background-color: #f5f7f9;
+    font-size: 110%;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.footer-content {
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 80%;
+    
+    
+}
+
+.col-25-perc {
+    flex: 2.5;
+    text-align: right;
+}
+
+
+.col-45-perc {
+    flex:4.5;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.footer-content a {
+    color:#e3e3e3;
+}
+.footer-content p {
+    color:#e3e3e3;
+}
+.footer-content h2 {
+    color:#eef4f7;
+    font-size: 120%;
+}
+.footer-content .btn-compie {
+    color: #36455e;;
+}
+.footer-content .compie-small {
+    color: #36455e;
+    margin-right: -10px;
+}
+
+.col-33-perc {
+    flex:33.33;
+    padding: 0px 15px;
+    
+}
+
+.col-33-perc li {
+    margin-top: 10px;
+    
+    
+}
+.col-33-perc h2 {
+    color: #eef4f7;
+    font-weight:600;
+}
+
+.seperator-footer {
+    color: #455767;
+    padding: 2px;
+}
+
+.footer-para {
+    margin-top: 15px;
+    color: #e2e8ed;
+    padding-left: 20px;
+}
+
+.compie-small {
+    font-size: 90%;
+    border-radius: 20px;
+    background-color: #eef4f7;
+    padding: 5px 20px 5px 20px; 
+    
+        
+}
+
+
+.circle-logo {
+    background-color: #eef4f7;
+    border-radius: 50%;
+    color: #1e3048;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    margin-left: 10px;
+}
+.circle-logo i {
+    color: #36455e;
+}
+
+.col-30-perc {
+    flex:3;
+    text-align: right;
+}
+
+
+.footer-header {
+    font-weight: 700;
+}
+
+.footer-select {
+    -webkit-appearance: none;
+    width: 85%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    direction: rtl;
+    font-family: 'FontAwesome';
+    color: #4e5c73;
+    background: url(img/checkmark-png.png) no-repeat 5% 50%;
+    background-color: #eef4f7;
+}
+
+
+/*
+----------
+COPYWRITE DIV 
+----------
+*/
+
+
+.copywrite {
+    background-color: #2c394e;
+    padding: 10px;
+
+}
+.copywrite h2 {
+    color: #fff;
+    font-size: 75%;
+    display: inline-block;
+}
+.copywrite span {
+    margin-left: auto;
+    color: #fff;
+}
+
+.copywrite-content {
+    display: flex;
+    align-items: center;
+}

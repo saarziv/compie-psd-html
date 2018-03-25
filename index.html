@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+<!--
+SAAR DONT FORGET THE FOOTER !!!!!!!!!!!
+-->
 
 <head>
     <meta charset="utf-8">
@@ -9,26 +12,27 @@
     <meta name="author" content="saar">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css"> </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
-                <div class="left-nav">
-                    <img src="css/img/header-person-logo.png" alt="person logo" class="person-logo"> 
-                    <img src="css/img/nav-left-pipe-line.png" alt="seperator">
-                    <img src="css/img/header-mail-logo.png" alt="mail logo"> 
-                </div>
-                <div class="right-nav"> 
-                    <a href="#"><img src="css/img/header-search-logo.png" alt=""></a>
-                    <div class="apartment-insurance"> 
-                        <img src="css/img/nav-pipe-line.png" alt="seperator." class="seperator">
-                        <a href="#" ><img src="css/img/down-arrow-logo.png" alt="arrow logo" class="arrow-logo"></a>
-                        ביטוח דירה <img src="css/img/header-couch-logo.png" alt="couch logo" class="couch-logo"> 
-                    </div>
-                    <a href="#" class="compie-btn">Compie</a>
-                </div>
+                <ul class="nav-main">
+                    <li><a href="#"><img src="css/img/header-person-logo.png" alt="person logo" class="person-logo"></a></li>
+                    <li class="mail-logo"><a href="#"><img src="css/img/header-mail-logo.png" alt="mail logo"></a></li>
+                    <li><a href="#"><img src="css/img/header-search-logo.png" alt=""></a></li>
+                    <li class="apartment-insurance"> 
+                        <select name="insurance-type" id="insurance-select" class="styled-select">
+                            <option value="ביטוח דירות">ביטוח דירות</option>
+                        </select>
+                        <img src="css/img/header-couch-logo.png" alt="couch logo" class="couch-logo"> 
+                    </li>
+                    <li><a href="#" class="compie-btn">Compie</a></li>
+                </ul>
             </nav>
             <div class="heading">
                 <h1>ביטוח <img src="css/img/header-car.png" alt="car"> רכב</h1>
@@ -36,6 +40,527 @@
             </div>
         </div>
     </header>
+
+    <section id="how-it-works">
+        <div class="container">
+             <ul class="steps-list">
+                <li class="step">
+                    <img src="css/img/istruction-report-icon.png" alt="report icon" class="step-icon">
+                    <h2 class="step-number">1</h2> 
+                    <p class="step-content">
+                        ממלאים פרטים להצעת ביטוח
+                    </p>
+                    <img src="css/img/left-arrow.png" alt="left arrow image" class="left-arrow-icon">
+                </li>
+                <li class="step">
+                    <img src="css/img/instruction-coin-icon.png" alt="coin icon" class="step-icon">
+                    <h2 class="step-number">2</h2> 
+                    <p class="step-content">
+                        מקבלים מגוון הצעות משתלמות מסוכני ביטוח
+                    </p>
+                    <img src="css/img/left-arrow.png" alt="left arrow image" class="left-arrow-icon">
+                </li>
+                <li class="step">
+                    <img src="css/img/instruction-person-icon.png" alt="person icon" class="step-icon">
+                    <h2 class="step-number">3</h2> 
+                    <p class="step-content">
+                        בוחרים סוכן ביטוח הטוב ביותר
+                    </p>
+                    <img src="css/img/left-arrow.png" alt="left arrow image" class="left-arrow-icon">
+                </li>
+                <li class="step">
+                    <img src="css/img/instruction-hand-icon.png" alt="hand icon" class="step-icon">
+                    <h2 class="step-number">4</h2> 
+                    <p class="step-content">
+                        רוכשים פוליסה בקליק
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="insurance-information">
+    <div class="container">
+        <section class="insurance-content">
+            <div class="heading">
+                <div class="content-box">
+                    <div class="main-heading">
+                        <h2>נמצאו 3508 סוכני ביטוח</h2> 
+                    </div>
+                    <div class="content-box-info">
+                        <ul class="sort">
+                            <li>
+                                <div class="of-select">
+                                    <select name="sort-by-price" class="styled-select" id="price-sort">
+                                        <option value="מחיר נמוך לגבוה">מחיר נמוך לגבוה</option>
+                                    </select>
+                                    <label for="sort-by-price" id="l-price">: מיין לפי</label>
+                                </div>
+                            </li>
+                            <li class="border-before">דירוג סוכן</li>
+                            <li class="break-left">מס’ מדרגים</li>
+                            <li>
+                                <div class="border-after">
+                                    <select name="sort-by-location" class="styled-select" id="location-sort">
+                                        <option value="">כל האיזורים</option>
+                                    </select>
+                                    <label for="sort-by-location" id="l-id">: סינון לפי איזור</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+              <div class="insurance-companies">
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Astr1"></i>
+                                <i class="fas fa-star checked" id="Astr2"></i>
+                                <i class="fas fa-star checked" id="Astr3"></i>
+                                <i class="fas fa-star" id="Astr4"></i>
+                                <i class="fas fa-star" id="Astr5"></i>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Bstr1"></i>
+                                <i class="fas fa-star checked" id="Bstr2"></i>
+                                <i class="fas fa-star checked" id="Bstr3"></i>
+                                <i class="fas fa-star" id="Bstr4"></i>
+                                <i class="fas fa-star" id="Bstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Cstr1"></i>
+                                <i class="fas fa-star checked" id="Cstr2"></i>
+                                <i class="fas fa-star checked" id="Cstr3"></i>
+                                <i class="fas fa-star" id="Cstr4"></i>
+                                <i class="fas fa-star" id="Cstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Dstr1"></i>
+                                <i class="fas fa-star checked" id="Dstr2"></i>
+                                <i class="fas fa-star checked" id="Dstr3"></i>
+                                <i class="fas fa-star" id="Dstr4"></i>
+                                <i class="fas fa-star" id="Dstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Fstr1"></i>
+                                <i class="fas fa-star checked" id="Fstr2"></i>
+                                <i class="fas fa-star checked" id="Fstr3"></i>
+                                <i class="fas fa-star" id="Fstr4"></i>
+                                <i class="fas fa-star" id="Fstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Estr1"></i>
+                                <i class="fas fa-star checked" id="Estr2"></i>
+                                <i class="fas fa-star checked" id="Estr3"></i>
+                                <i class="fas fa-star" id="Estr4"></i>
+                                <i class="fas fa-star" id="Estr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Gstr1"></i>
+                                <i class="fas fa-star checked" id="Gstr2"></i>
+                                <i class="fas fa-star checked" id="Gstr3"></i>
+                                <i class="fas fa-star" id="Gstr4"></i>
+                                <i class="fas fa-star" id="Gstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Hstr1"></i>
+                                <i class="fas fa-star checked" id="Hstr2"></i>
+                                <i class="fas fa-star checked" id="Hstr3"></i>
+                                <i class="fas fa-star" id="Hstr4"></i>
+                                <i class="fas fa-star" id="Hstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Istr1"></i>
+                                <i class="fas fa-star checked" id="Istr2"></i>
+                                <i class="fas fa-star checked" id="Istr3"></i>
+                                <i class="fas fa-star" id="Istr4"></i>
+                                <i class="fas fa-star" id="Istr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+                <div class="insurance-company content-box"> 
+                   <img src="css/img/insurance-company-logo.png" alt="sopme company logo" class="company-logo">
+                    <div class="company-info">
+                        <h2>אלמוג יצחקי סוכנות אלמוגים</h2>
+                        <p>"ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה</p>
+                        <div class="location-and-rating">
+                            <a href="#"><span>פתח תקווה</span> <img src="css/img/gps-logo.png" alt=""> </a>
+                            <div class="rating">
+                                <i class="fas fa-star checked" id="Jstr1"></i>
+                                <i class="fas fa-star checked" id="Jstr2"></i>
+                                <i class="fas fa-star checked" id="Jstr3"></i>
+                                <i class="fas fa-star" id="Jstr4"></i>
+                                <i class="fas fa-star" id="Jstr5"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-price">
+                    </div>
+                    
+                    <div class="company-plan-price">
+                        <h3>&#8362;483</h3>
+                        <p>פרמיה חודשית</p>
+                        <a href="" class="btn btn-purchase">לרכישה<img src="css/img/shopping-cart.png" alt="shoping cart image" class="shopping-cart-logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-nav">
+                <ul>
+                    <li class="page-nav-box priv-arrow"><a href="#"></a></li>
+                    <li class="page-nav-box"><a href="#">1</a></li>
+                    <li class="page-nav-box"><a href="#" >2</a></li>
+                    <li class="page-nav-box"><a href="#" >3</a></li>
+                    <li class="page-nav-box"><a href="#" >4</a></li>
+                    <li class="page-nav-box"><a href="#" >5</a></li>
+                    <li class="page-nav-box"><a href="#" >6</a></li>
+                    <li class="page-nav-box next-arrow"><a href="#"></a></li>
+                </ul>
+            </div>
+            
+             
+        </section>
+           
+            
+            
+            
+            <aside class="price-wizard-content">
+               <div class="content-box ">
+                   <div class="main-heading">
+                       <h2>אשף המחיר</h2>
+                   </div>
+                   <div class="content-box-info ">
+                       <p class="border-bottom">לקבלת הצעת מחיר מותאמת אישית אנא הזן 
+את הפרטים הבאים 
+                    </p>
+                    
+                    
+                    <select name="insurance-type" class="styled-select wiz-select" id="first-wiz-select">
+                        <option value="בחר את סוג הביטוח" selected>בחר את סוג הביטוח</option>
+                    </select>
+                     <select name="insurance-type" class="styled-select wiz-select date-select" id="">
+                        <option value="תאריך תחילת ביטוח" selected>תאריך תחילת ביטוח</option>
+                    </select>
+                     <select name="insurance-type" class="styled-select wiz-select plus-select" id="">
+                        <option value="בחר את סוג הרכב" selected>בחר את סוג הרכב</option>
+                    </select>
+                     <select name="insurance-type" class="styled-select wiz-select plus-select" id="">
+                        <option value="מי ינהג ברכב" selected>מי ינהג ברכב</option>
+                    </select>
+                     <select name="insurance-type" class="styled-select wiz-select" id="">
+                        <option value="מטרת השימוש ברכב" selected>מטרת השימוש ברכב</option>
+                    </select>
+                    <div class="border-bottom">
+                        <select name="insurance-type" class="styled-select wiz-select" id="last-wiz-select ">
+                            <option value="היכן אתה גר" selected>היכן אתה גר</option>
+                        </select>
+                    </div>
+                    <div class="wiz-question border-bottom">
+                        <p class="question-content">האם היה לך ביטוח מקיף או רכב ליסינג ב-3 שנים האחרונות</p>
+                        <div class="wiz-answer">
+                            <a href="#">לא</a>
+                        </div>
+                        <div class="wiz-answer">
+                            <a href="#">כן</a>
+                        </div>
+                    </div>
+                    <div class="wiz-question border-bottom">
+                        <p class="question-content">האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?</p>
+                        <div class="wiz-answer">
+                            <a href="#">לא</a>
+                        </div>
+                        <div class="wiz-answer">
+                            <a href="#">כן</a>
+                        </div>
+                    </div>
+                    <div class="wiz-question border-bottom">
+                        <p class="question-content">האם לבן הזוג יש רכב נוסף?</p>
+                        <div class="wiz-answer">
+                            <a href="#">לא</a>
+                        </div>
+                        <div class="wiz-answer">
+                            <a href="#">כן</a>
+                        </div>
+                    </div>
+                    <div class="wiz-question border-bottom">
+                        <p class="question-content">האם יש לך עבר פלילי?</p>
+                        <div class="wiz-answer">
+                            <a href="#">לא</a>
+                        </div>
+                        <div class="wiz-answer">
+                            <a href="#">כן</a>
+                        </div>
+                    </div>
+                    <div class="wiz-question border-bottom">
+                        <p class="question-content">האם שללו לך את הרישיון בעבר?</p>
+                        <div class="wiz-answer">
+                            <a href="#">לא</a>
+                        </div>
+                        <div class="wiz-answer">
+                            <a href="#">כן</a>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-suggestion">קבל הצעות</a>
+                   </div>
+               </div>
+               <div class="content-box commercial">
+                    <img src="css/img/commercial-img.png" alt="commercial img" class="img-commercial">
+               </div>
+                
+            </aside>
+        </div>
+    </section>
+    
+    
+    <footer>
+       <div class="container">
+           <div class="footer-content">
+               <div class="col-25-perc">
+                   <a href="" class="btn-compie">Compie</a>
+                   <p class="footer-para">
+                       לפורמי בלוף קינץ תתיח לרעת. לת צישחמי צש בליא, מנסוטו צמלח לביקו גנבי צמוקו בלוריה סכעיט דז מא,
+                   </p>
+                   
+               </div>
+               <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-footer">
+                </div>
+               <div class="col-45-perc">
+                   <div class="col-33-perc">
+                       <h2 class="footer-header">סוכנים</h2>
+                       <ul>
+                           <li><a href="#">הרשמה למערכת</a></li>
+                           <li><a href="#">צור קשר</a></li>
+                           <li><a href="#" class="compie-small">כניסת סוכנים</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-33-perc">
+                       <h2 class="footer-header">פרטים חשובים</h2>
+                       <ul>
+                           <li><a href="">תנאי שימוש</a></li>
+                           <li><a href="">מדיניות פרטיות</a></li>
+                           <li><a href="">צור קשר</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-33-perc">
+                       <h2 class="footer-header">עקבו אחרינו</h2>
+                       <ul>
+                           <li>
+                               <a href="#">פייסבוק</a>
+                               <a href="#" class="circle-logo"><i class="ion-social-facebook"></i></a>
+                           </li>
+                           <li>
+                               <a href="#">טווטר</a>
+                               <a href="#" class="circle-logo"><i class="ion-social-twitter" ></i></a>
+                           </li>
+                           <li>
+                               <a href="#">גוגל פלוס</a>
+                               <a href="#" class="circle-logo"><i class="ion-social-googleplus-outline"></i></a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="seperator">
+                        <img src="css/img/seprator-price.png" alt="sepreator." class="seperator-footer">
+                </div>
+               <div class="col-30-perc">
+                   <h2 class="footer-header">השאר מעודכן</h2>
+                   <p class="footer-para"> הירשם לרשימת התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב</p>
+                   <select class="footer-select" name="contact-info" id="">
+                       <option value='כתובת הדוא"ל שלך'>
+                           כתובת הדוא"ל שלך
+                       </option>
+                   </select>
+                  
+                   
+               </div>
+           </div>
+
+       </div>
+       
+    </footer> 
+    <div class="copywrite">
+           <div class="container">
+              <div class="copywrite-content">
+                  <h2>UI & DESIGN BY: <img src="css/img/avioz.png" alt="image"></h2>
+                   <span>כל הזכויות שמורות</span>
+              </div>
+           </div>
+    </div>
+   
+    
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
